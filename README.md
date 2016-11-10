@@ -1,4 +1,4 @@
-﻿# Remove All Marker
+# Remove All Marker
 (C) あかつきみさき(みくちぃP)
 
 ## このスクリプトについて
