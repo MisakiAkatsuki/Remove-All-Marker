@@ -32,6 +32,10 @@
   const selLayers: Layer[] = <Layer[]>actComp.selectedLayers;
 
   if (!isLayerSelected(selLayers)) {
+    if(parseFloat(app.version) < AppVersion.CC2017){
+      return 0;
+    }
+
     keyNum = <number>actComp.markerProperty.numKeys;
 
     for (let i = 1; i <= keyNum; i++) {
