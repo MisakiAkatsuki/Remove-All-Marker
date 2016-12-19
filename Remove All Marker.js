@@ -27,6 +27,9 @@
     var actMarkerTime = 0;
     var selLayers = actComp.selectedLayers;
     if (!isLayerSelected(selLayers)) {
+        if (parseFloat(app.version) < 14 /* CC2017 */) {
+            return 0;
+        }
         keyNum = actComp.markerProperty.numKeys;
         for (var i = 1; i <= keyNum; i++) {
             actComp.markerProperty.removeKey(1);
